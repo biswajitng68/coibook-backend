@@ -4,6 +4,10 @@ const User=require("../models/Userupdate");
 var jwt=require("jsonwebtoken")
 var ObjectId = require("mongodb").ObjectID;
 
+router.get("/check",(req,res)=>{
+  res.send("hi i am bn")
+})
+
  const JWT_SECRET = 'Biswa#12545nag@123';
 // ROUTE 1: Create a User using: POST "/api/auth/createuser". No login required
 router.post('/sign', async (req, res) => {
